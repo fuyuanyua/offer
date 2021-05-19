@@ -16,11 +16,11 @@ class Question06Test {
 
     @Test
     void solution() {
+        // 初始化一个单向链表：1 -> 5 -> 8 -> 9
         Question06.ListNode head = new Question06.ListNode(1);
         Question06.ListNode listNode1 = new Question06.ListNode(5);
         Question06.ListNode listNode2 = new Question06.ListNode(8);
         Question06.ListNode listNode3 = new Question06.ListNode(9);
-
         head.setNext(listNode1);
         listNode1.setNext(listNode2);
         listNode2.setNext(listNode3);
