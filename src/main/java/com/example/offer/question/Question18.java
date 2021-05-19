@@ -41,9 +41,8 @@ public class Question18 {
      * @return
      */
     public static ListNode solution(ListNode head, int value) {
-
         // 特殊情况1：如果头节点为空，直接返回空
-        if (null == head) {
+        if (head == null) {
             return null;
         }
 
