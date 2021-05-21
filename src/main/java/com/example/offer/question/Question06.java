@@ -7,7 +7,10 @@ import java.util.Stack;
 /**
  * @Description: 剑指 Offer 06. 从尾到头打印链表
  *      1.说明：输入一个链表的头节点，从尾到头反过来返回每个节点的值（用数组返回）
- *      2.参考：https://leetcode-cn.com/problems/cong-wei-dao-tou-da-yin-lian-biao-lcof/
+ *      2.示例：
+ *          输入：1 -> 2 -> 3
+ *          输出：[3, 2, 1]
+ *      3.参考：https://leetcode-cn.com/problems/cong-wei-dao-tou-da-yin-lian-biao-lcof/
  * @Author: lhb
  * @Date: 2021/5/17 22:45
  */

@@ -5,7 +5,10 @@ import lombok.Data;
 /**
  * @Description: 剑指 Offer 22. 链表中倒数第k个节点
  *      1.说明：输入一个链表，输出该链表中倒数第k个节点。为了符合大多数人的习惯，本题从1开始计数，即链表的尾节点是倒数第1个节点。
- *      2.参考：https://leetcode-cn.com/problems/lian-biao-zhong-dao-shu-di-kge-jie-dian-lcof/
+ *      2.示例:
+ *          输入：(1 -> 2 -> 3 -> 4), 3
+ *          输出：2 -> 3 -> 4
+ *      3.参考：https://leetcode-cn.com/problems/lian-biao-zhong-dao-shu-di-kge-jie-dian-lcof/
  * @Author: lhb
  * @Date: 2021/5/19 10:58
  */

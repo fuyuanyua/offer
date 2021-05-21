@@ -5,7 +5,10 @@ import lombok.Data;
 /**
  * @Description: 剑指 Offer 18. 删除链表的节点
  *      1.说明：给定单向链表的头指针和一个要删除的节点的值，定义一个函数删除该节点，返回删除后的链表的头节点。
- *      2.参考：https://leetcode-cn.com/problems/shan-chu-lian-biao-de-jie-dian-lcof/
+ *      2.示例：
+ *          输入：(1 -> 2 -> 3), 2
+ *          输出：1 -> 3
+ *      3.参考：https://leetcode-cn.com/problems/shan-chu-lian-biao-de-jie-dian-lcof/
  * @Author: lhb
  * @Date: 2021/5/18 23:04
  */

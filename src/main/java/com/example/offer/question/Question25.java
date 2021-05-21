@@ -5,7 +5,10 @@ import lombok.Data;
 /**
  * @Description: 合并两个排序的链表
  *      1.说明：输入两个递增排序的链表，合并这两个链表并使新链表中的节点仍然是递增排序的。
- *      2.参考：https://leetcode-cn.com/problems/he-bing-liang-ge-pai-xu-de-lian-biao-lcof/
+ *      2.示例：
+ *          输入：(1 -> 3 -> 5), (2 -> 4 -> 6)
+ *          输出：1 -> 2 -> 3 -> 4 -> 5 -> 6
+ *      3.参考：https://leetcode-cn.com/problems/he-bing-liang-ge-pai-xu-de-lian-biao-lcof/
  * @Author: lhb
  * @Date: 2021/5/20 13:12
  */
