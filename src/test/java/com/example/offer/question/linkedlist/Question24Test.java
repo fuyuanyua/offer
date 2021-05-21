@@ -1,10 +1,8 @@
-package com.example.offer.question;
+package com.example.offer.question.linkedlist;
 
+import com.example.offer.question.linkedlist.Question24;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
-import sun.rmi.runtime.Log;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 /**
  * @Description: Question24Test
@@ -16,7 +14,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class Question24Test {
 
     @Test
-    void solution() {
+    void solution1() {
         // 初始化一个单向链表：2 -> 3 -> 4 -> 5 -> 10
         Question24.ListNode head = new Question24.ListNode(2);
         Question24.ListNode node1 = new Question24.ListNode(3);

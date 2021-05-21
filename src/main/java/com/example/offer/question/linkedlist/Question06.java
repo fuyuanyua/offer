@@ -1,4 +1,4 @@
-package com.example.offer.question;
+package com.example.offer.question.linkedlist;
 
 import lombok.Data;
 

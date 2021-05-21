@@ -1,9 +1,8 @@
-package com.example.offer.question;
+package com.example.offer.question.linkedlist;
 
+import com.example.offer.question.linkedlist.Question25;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 /**
  * @Description: Question25Test
