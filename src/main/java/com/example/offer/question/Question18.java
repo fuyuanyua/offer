@@ -41,12 +41,12 @@ public class Question18 {
      * @return
      */
     public static ListNode solution(ListNode head, int value) {
-        // 特殊情况1：如果头节点为空，直接返回空
+        // 如果头节点为空，直接返回空
         if (head == null) {
             return null;
         }
 
-        // 特殊情况2：如果头节点就是要删除的节点，直接返回头节点的下一个节点
+        // 如果头节点就是要删除的节点，直接返回头节点的下一个节点
         if (head.value == value) {
             return head.next;
         }

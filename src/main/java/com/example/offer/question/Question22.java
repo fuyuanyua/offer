@@ -41,12 +41,12 @@ public class Question22 {
      * @return
      */
     public static ListNode solution(ListNode head, int k) {
-        // 特例1：k <= 0无意义，返回空
+        // 如果k <= 0，无意义，返回空
         if (k <= 0) {
             return null;
         }
 
-        // 特例2：输入空链表，返回空
+        // 如果输入的链表为空，返回空
         if (head == null) {
             return null;
         }
