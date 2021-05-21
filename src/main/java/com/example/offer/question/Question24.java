@@ -41,11 +41,11 @@ public class Question24 {
 
     /**
      * 解法1：
-     *      思路：利用栈先进后出的特性
+     *      思路：额外使用一个辅助栈，利用栈先进后出的特性
      * @param head
      * @return
      */
-    public static ListNode solution(ListNode head) {
+    public static ListNode solution1(ListNode head) {
         if (head == null) {
             return null;
         }
@@ -71,5 +71,32 @@ public class Question24 {
         }
 
         return fakeNode.next;
+    }
+
+    /**
+     * 解法2：
+     *      思路：定义三个指针
+     * @param head
+     * @return
+     */
+    public static ListNode solution2(ListNode head) {
+        // 当前指针，指向当前节点，用于遍历链表，初始化指向头节点
+        ListNode current = head;
+        // 前驱指针，指向当前节点的原前驱
+        ListNode pre = null;
+        // 后继指针，指向当前节点的原后继
+        ListNode temp = null;
+
+        // 遍历链表
+        while (current != null) {
+            // 临时保存当前节点的原后继，否则更改当前节点的next后，链表会断开，找不到原后继
+            temp = current.next;
+            current.next = pre;
+
+            // 前驱指针和当前指针都后移一步
+            pre = current;
+            current = temp;
+        }
+        return pre;
     }
 }

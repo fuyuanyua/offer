@@ -3,7 +3,7 @@ package com.example.offer.question;
 import lombok.Data;
 
 /**
- * @Description: 合并两个排序的链表
+ * @Description: 剑指 Offer 25. 合并两个排序的链表
  *      1.说明：输入两个递增排序的链表，合并这两个链表并使新链表中的节点仍然是递增排序的。
  *      2.示例：
  *          输入：(1 -> 3 -> 5), (2 -> 4 -> 6)
