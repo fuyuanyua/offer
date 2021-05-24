@@ -75,7 +75,7 @@ public class Question24 {
 
     /**
      * 解法2：
-     *      思路：定义三个指针
+     *      思路：直接调整每个节点next的指向，由指向后继调整到指向前驱，需要定义三个指针
      * @param head
      * @return
      */
