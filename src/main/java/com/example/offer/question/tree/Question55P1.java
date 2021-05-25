@@ -75,6 +75,13 @@ public class Question55P1 {
     /**
      * 解法2：
      *      思路：层序遍历
+     * 笔记：
+     *      Java的Queue接口相关API：
+     *          * offer方法：
+     *              boolean offer(E e); 向队列尾插入一个元素
+     *          * poll方法：
+     *              E poll(); 将队列头元素移除，并返回这个元素
+     *
      * @param root
      * @return
      */
@@ -88,17 +95,17 @@ public class Question55P1 {
         int depth = 0;
         // 存储当前层的节点，初始化存储根节点
         Queue<TreeNode> currentLayer = new LinkedList<>();
-        currentLayer.add(root);
+        currentLayer.offer(root);
 
         while (!currentLayer.isEmpty()) {
             // 临时存储下一层的节点
             Queue<TreeNode> nextLayer = new LinkedList<>();
             for (TreeNode node : currentLayer) {
                 if (node.left != null) {
-                    nextLayer.add(node.left);
+                    nextLayer.offer(node.left);
                 }
                 if (node.right != null) {
-                    nextLayer.add(node.right);
+                    nextLayer.offer(node.right);
                 }
             }
             currentLayer = nextLayer;
