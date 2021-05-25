@@ -114,4 +114,44 @@ public class Question55P1 {
 
         return depth;
     }
+
+    /**
+     * 解法3：
+     *      思路：层序遍历
+     *      优化：解法2基础上进行优化，无需new额外的队列
+     * @param root
+     * @return
+     */
+    public static int solution3(TreeNode root) {
+        // 树的根节点为null，直接返回0
+        if (root == null) {
+            return 0;
+        }
+
+        // 记录树的深度
+        int depth = 0;
+        // 存储当前层的节点，初始化存储根节点
+        Queue<TreeNode> queue = new LinkedList<>();
+        queue.offer(root);
+
+        while (!queue.isEmpty()) {
+            int size = queue.size();
+            for (int i = 0; i < size; i++) {
+                // 队列头移除
+                TreeNode node = queue.poll();
+                if (node.left != null) {
+                    // 队列尾添加
+                    queue.offer(node.left);
+                }
+                if (node.right != null) {
+                    // 队列尾添加
+                    queue.offer(node.right);
+                }
+            }
+            // 保证了以上循环走完，queue中存储的都是下一层的节点
+            depth++;
+        }
+
+        return depth;
+    }
 }
