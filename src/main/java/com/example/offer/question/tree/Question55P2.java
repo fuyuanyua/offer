@@ -17,15 +17,15 @@ public class Question55P2 {
 
     /**
      * 解法1：
-     *      思路：递归，如果树的每一个节点的左右子树的深度差都不超过1，那么这棵树就是平衡二叉树
+     *      思路：先序遍历这棵树，判断每个节点，如果树的每一个节点的左右子树的深度差都不超过1，那么这棵树就是平衡二叉树
      *      说明：节点的左右子树的深度都借助Question55P1中的solution1方法得到
-     *      缺点：重复遍历节点多次
+     *      缺点：每一个节点的判断都要计算左右子树深度，而左右子树的深度都是递归得到的结果，那么节点会被重复遍历多次
      * @param root
      * @return
      */
     public static boolean solution1(Question55P1.TreeNode root) {
         // 或是根节点为null
-        // 或是跳出递归的条件
+        // 或是递归终止的条件
         if (root == null) {
             return true;
         }

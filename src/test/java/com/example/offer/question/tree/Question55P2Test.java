@@ -16,7 +16,7 @@ class Question55P2Test {
 
     @Test
     void solution1() {
-        // 初始化一颗平衡二叉树
+        // 初始化一棵平衡二叉树
         Question55P1.TreeNode root1 = creatTree1();
         log.info("----------测试平衡二叉树----------");
         // 输入
@@ -25,7 +25,7 @@ class Question55P2Test {
         boolean result1 = Question55P2.solution1(root1);
         log.info("output = {}", result1);
 
-        // 初始化一颗非平衡二叉树
+        // 初始化一棵非平衡二叉树
         Question55P1.TreeNode root2 = creatTree2();
         log.info("----------测试非平衡二叉树----------");
         // 输入
@@ -36,7 +36,7 @@ class Question55P2Test {
     }
 
     /**
-     * 创建一颗非平衡二叉树
+     * 创建一棵非平衡二叉树
      *          1
      *         / \
      *        1   1
@@ -60,7 +60,7 @@ class Question55P2Test {
     }
 
     /**
-     * 创建一颗平衡二叉树
+     * 创建一棵平衡二叉树
      *          1
      *         / \
      *        1   1
