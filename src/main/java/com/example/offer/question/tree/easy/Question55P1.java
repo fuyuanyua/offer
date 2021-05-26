@@ -1,6 +1,5 @@
-package com.example.offer.question.tree;
+package com.example.offer.question.tree.easy;
 
-import com.example.offer.question.linkedlist.Question24;
 import lombok.Data;
 import lombok.experimental.Accessors;
 

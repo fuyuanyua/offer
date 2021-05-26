@@ -1,4 +1,4 @@
-package com.example.offer.question.tree;
+package com.example.offer.question.tree.easy;
 
 import lombok.Data;
 import lombok.experimental.Accessors;

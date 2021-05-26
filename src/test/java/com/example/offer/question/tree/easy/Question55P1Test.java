@@ -1,9 +1,8 @@
-package com.example.offer.question.tree;
+package com.example.offer.question.tree.easy;
 
+import com.example.offer.question.tree.easy.Question55P1;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 /**
  * @Description: Question55P1Test

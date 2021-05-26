@@ -1,6 +1,6 @@
-package com.example.offer.question.linkedlist;
+package com.example.offer.question.linkedlist.easy;
 
-import com.example.offer.question.linkedlist.Question06;
+import com.example.offer.question.linkedlist.easy.Question06;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 

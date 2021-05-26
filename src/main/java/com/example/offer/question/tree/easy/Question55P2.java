@@ -1,7 +1,4 @@
-package com.example.offer.question.tree;
-
-import lombok.Data;
-import lombok.experimental.Accessors;
+package com.example.offer.question.tree.easy;
 
 /**
  * @Description: 剑指 Offer 55 - II. 平衡二叉树
