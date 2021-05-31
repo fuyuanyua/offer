@@ -1,5 +1,6 @@
 package com.example.offer.question.array.easy;
 
+import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -45,6 +46,28 @@ public class Question03 {
             }
             // 如果哈希表中没有这个元素，则加入这个元素
             hashSet.add(current);
+        }
+        // 遍历完数组都没找到重复的数字，返回-1
+        return -1;
+    }
+
+    /**
+     * 解法2：
+     *      思路：先对数组排序，然后遍历数组，相邻元素相等则表示找到了重复数字
+     *      优点：无需额外空间
+     *      缺点：排序时间复杂度O(nlogn)
+     * @param nums
+     * @return
+     */
+    public static int solution2(int[] nums) {
+        // 先对数组按升序排序
+        Arrays.sort(nums);
+        int length = nums.length;
+        // 遍历数组，比较当前元素和前一个元素是否相等，相等则表示找到
+        for (int i = 1; i < length; i++) {
+            if (nums[i] == nums[i - 1]) {
+                return nums[i - 1];
+            }
         }
         // 遍历完数组都没找到重复的数字，返回-1
         return -1;
