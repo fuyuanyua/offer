@@ -72,4 +72,34 @@ public class Question03 {
         // 遍历完数组都没找到重复的数字，返回-1
         return -1;
     }
+
+    /**
+     * 解法3：
+     *      思路：
+     *          遍历数组，通过交换的操作，使元素下标与元素值对应（例如元素下标为0，值也要为0），
+     *          如果一个下标对应了多个元素，则找出了重复的值
+     *      优点：遍历数组，时间复杂度O(n)，每次判断与交换，时间复杂度O(1)，无使用额外空间，目前最优解
+     * @param nums
+     * @return
+     */
+    public static int solution3(int[] nums) {
+        int length = nums.length;
+        for (int i = 0; i < length; i++) {
+            // 如果值与下标相等，继续往后遍历
+            if (nums[i] == i) {
+                continue;
+            } else { // 如果值与下标不相等
+                // 则打算将此元素交换到值所对应的下标位置
+                // 交换前先对比两个位置的值，如果相等，则找到了重复的值
+                if (nums[i] == nums[nums[i]]) {
+                    return nums[i];
+                }
+                // 如果不相等，则交换
+                int temp = nums[i];
+                nums[i] = nums[temp];
+                nums[temp] = temp;
+            }
+        }
+        return -1;
+    }
 }
