@@ -1,5 +1,6 @@
 package com.example.offer.question.array.easy;
 
+import com.example.offer.util.ArrayUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 
@@ -16,16 +17,23 @@ class Question03Test {
 
     @Test
     void solution1() {
-        log.info("----------测试寻找数组中重复的数字----------");
-        // 初始化一个数组
-        int[] nums = new int[] {2, 3, 1, 0, 2, 5, 3};
-
+        log.info("----------测试包含重复数字的数组----------");
+        // 初始化一个包含重复数字的数组
+        int[] nums1 = ArrayUtil.createRepeatedArray();
         // 输入
-        log.info("input = {}", nums);
-
+        log.info("input = {}", nums1);
         //输出
-        int result = Question03.solution1(nums);
-        log.info("output = {}", result);
+        int result1 = Question03.solution1(nums1);
+        log.info("output = {}", result1);
+
+        log.info("----------测试没有重复数字的数组----------");
+        // 初始化一个包含重复数字的数组
+        int[] nums2 = ArrayUtil.createNoRepeatedArray();
+        // 输入
+        log.info("input = {}", nums2);
+        //输出
+        int result2 = Question03.solution1(nums2);
+        log.info("output = {}", result2);
 
     }
 }
