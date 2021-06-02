@@ -26,4 +26,13 @@ public class ArrayUtil {
         return nums;
     }
 
+    /**
+     * 创建一个正序排序数组：[5,7,7,8,8,10]
+     * @return
+     */
+    public static int[] createSortedArray() {
+        int[] nums = new int[] {5, 7, 7, 8, 8, 10};
+        return nums;
+    }
+
 }
