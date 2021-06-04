@@ -46,14 +46,20 @@ public class ArrayUtil {
      *      一个长度为n-1的递增排序数组中的所有数字都是唯一的，并且每个数字都在范围0～n-1之内，
      *      在范围0～n-1内的n个数字中有且只有一个数字不在该数组中
      *      例如：[0, 1, 2, 4, 5]
+     *      此方法生成的随机数组，长度在[1, 21)范围内
      * @return
      */
     public static int[] createQuestion53P2Array() {
         List<Integer> list = new ArrayList<>();
-        for (int i = 0; i < 10; i++) {
+
+        Integer temp = new Random().nextInt(20);
+        // n的范围为[2, 22)
+        int n = temp + 2;
+
+        for (int i = 0; i < n; i++) {
             list.add(i);
         }
-        list.remove(new Random().nextInt(10));
+        list.remove(new Random().nextInt(n));
 
         // List<Integer> -> int[]
         // 方法1：stream
