@@ -1,5 +1,11 @@
 package com.example.offer.util;
 
+import org.apache.commons.lang3.ArrayUtils;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
+
 /**
  * @Description: 创建数组的工具类
  * @Author: lhb
@@ -32,6 +38,29 @@ public class ArrayUtil {
      */
     public static int[] createSortedArray() {
         int[] nums = new int[] {5, 7, 7, 8, 8, 10};
+        return nums;
+    }
+
+    /**
+     * 随机创建符合Question53P2的数组：
+     *      一个长度为n-1的递增排序数组中的所有数字都是唯一的，并且每个数字都在范围0～n-1之内，
+     *      在范围0～n-1内的n个数字中有且只有一个数字不在该数组中
+     *      例如：[0, 1, 2, 4, 5]
+     * @return
+     */
+    public static int[] createQuestion53P2Array() {
+        List<Integer> list = new ArrayList<>();
+        for (int i = 0; i < 10; i++) {
+            list.add(i);
+        }
+        list.remove(new Random().nextInt(10));
+
+        // List<Integer> -> int[]
+        // 方法1：stream
+        int[] nums = list.stream().mapToInt(Integer::intValue).toArray();
+
+        // 方法2：借助commons-lang3包下的ArrayUtils.toPrimitive方法
+        // int[] nums = ArrayUtils.toPrimitive(list.toArray(new Integer[list.size()]));
         return nums;
     }
 
