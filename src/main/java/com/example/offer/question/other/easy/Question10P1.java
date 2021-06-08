@@ -1,5 +1,8 @@
 package com.example.offer.question.other.easy;
 
+import java.util.LinkedList;
+import java.util.List;
+
 /**
  * @Description: 斐波那契数列
  * @Author: lhb
@@ -15,7 +18,7 @@ package com.example.offer.question.other.easy;
  *      输入：5
  *      输出：5
  * 4.参考：https://leetcode-cn.com/problems/fei-bo-na-qi-shu-lie-lcof/
- * 5.笔记：
+ * 5.笔记：斐波那契数列问题不会考虑使用递归，效率极低
  */
 
 public class Question10P1 {
