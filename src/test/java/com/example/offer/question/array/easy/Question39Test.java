@@ -30,4 +30,12 @@ class Question39Test {
         int result = Question39.solution2(nums);
         log.info("output = {}", result);
     }
+
+    @Test
+    void solution3() {
+        int[] nums = ArrayUtil.createQuestion39Array();
+        log.info("input = {}", nums);
+        int result = Question39.solution3(nums);
+        log.info("output = {}", result);
+    }
 }

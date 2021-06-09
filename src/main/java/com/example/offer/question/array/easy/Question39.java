@@ -10,7 +10,7 @@ import java.util.Map;
  * @Date: 2021/6/8 14:22
  *
  * 1.说明：数组中有一个数字出现的次数超过数组长度的一半，请找出这个数字。
- * 2.限制：1 <= 数组长度 <= 50000
+ * 2.限制：1 <= 数组长度 <= 50000，且一定存在这个数字
  * 3.示例：
  *      输入：
  *          [1, 2, 3, 2, 2, 2, 5, 4, 2]
@@ -61,4 +61,39 @@ public class Question39 {
 
         return -1;
     }
+
+    /**
+     * 题解3：
+     *      思路：投票法
+     *      时间复杂度：遍历数组时间复杂度是O(n)
+     *      空间复杂度：使用常量大小的额外空间O(1)
+     * @param nums
+     * @return
+     */
+    public static int solution3(int[] nums) {
+        // 候选人，初始为数组第一个数字
+        int candidate = nums[0];
+        // 初始票数为1
+        int count = 1;
+
+        // 从数组第二个数字开始遍历
+        for (int i = 1; i < nums.length; i++) {
+            int currentNum = nums[i];
+            // 如果当前票数等于0，重新选举，把当前遍历到的数字设为选举人，票数设为1
+            if (count == 0) {
+                candidate = currentNum;
+                count = 1;
+            } else { // 如果当前票数不等于0，比较当前数字和候选人
+                // 如果当前数字等于候选人，票数+1
+                if (currentNum == candidate) {
+                    count = count + 1;
+                } else { // 否则票数-1
+                    count = count - 1;
+                }
+            }
+        }
+        // 最后胜出的候选人就是目标数字
+        return candidate;
+    }
+
 }
