@@ -88,4 +88,18 @@ public class ArrayUtil {
         return nums;
     }
 
+    /**
+     * 创建指定长度的随机数组
+     * @param length
+     * @return
+     */
+    public static int[] createSpecificLengthArray(int length) {
+        int[] nums = new int[length];
+        Random random = new Random();
+        for (int i = 0; i < length; i++) {
+            nums[i] = random.nextInt(length);
+        }
+        return nums;
+    }
+
 }
