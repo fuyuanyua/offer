@@ -17,6 +17,10 @@ import java.util.PriorityQueue;
  *      输出：
  *          [1,2]或[2,1]
  * 4.参考：https://leetcode-cn.com/problems/zui-xiao-de-kge-shu-lcof/
+ * 5.笔记：
+ *      topk问题，很容易想到借助大顶堆或小顶堆来实现：
+ *          1.最小的k个：大顶堆，new PriorityQueue<>((v1, v2) -> (v2 - v1))，传入比较器，构造一个大顶堆
+ *          2.最大的k个：小顶堆，new PriorityQueue<>()，无参构造方法默认小顶堆
  */
 
 public class Question40 {
@@ -31,7 +35,11 @@ public class Question40 {
      *                  1.如果此元素比最大数小，删除最大数，然后把此元素插入容器
      *                  2.否则什么都不做，然后继续访问下一个元素
      *          3.遍历完数组，最后返回这个容器中的所有元素
-     *      容器：借助PriorityQueue，默认是一个小顶堆，我们需要修改为大顶堆
+     *      容器：
+     *          1.借助PriorityQueue（优先队列（堆）），默认是一个小顶堆，我们需要构造为大顶堆
+     *          2.获取最大值：peek方法：直接返回队列头（不删除），时间复杂度O(1)
+     *          3.删除：poll方法：删除队列头，并重新维护这个堆，时间复杂度O(logn)
+     *          4.插入：offer方法：把元素插入队列，并重新维护这个堆，时间复杂度O(logn)
      *      时间复杂度：遍历数组O(n)，每次对容器的操作O(logk)，所以总时间复杂度O(nlogk)
      *      空间复杂度：额外借助了一个k大小的容器，所以是O(k)
      * @param arr
