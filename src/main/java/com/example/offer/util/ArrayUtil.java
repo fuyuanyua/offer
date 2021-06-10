@@ -79,4 +79,13 @@ public class ArrayUtil {
         return nums;
     }
 
+    /**
+     * 创建符合Question40的数组：[3, 2, 1]
+     * @return
+     */
+    public static int[] createQuestion40Array() {
+        int[] nums = new int[] {3, 2, 1};
+        return nums;
+    }
+
 }
