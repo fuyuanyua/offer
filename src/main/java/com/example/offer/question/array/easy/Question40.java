@@ -1,5 +1,8 @@
 package com.example.offer.question.array.easy;
 
+import java.util.ArrayList;
+import java.util.Hashtable;
+import java.util.LinkedList;
 import java.util.PriorityQueue;
 
 /**
@@ -21,6 +24,11 @@ import java.util.PriorityQueue;
  *      topk问题，很容易想到借助大顶堆或小顶堆来实现：
  *          1.最小的k个：大顶堆，new PriorityQueue<>((v1, v2) -> (v2 - v1))，传入比较器，构造一个大顶堆
  *          2.最大的k个：小顶堆，new PriorityQueue<>()，无参构造方法默认小顶堆
+ *      PriorityQueue说明：
+ *          简单阅读源码可以发现：
+ *          1.底层数据结构是一个数组，利用一个数组来维护成堆
+ *          2.queue[n] 的两个孩子是 queue[2n+1] 和 queue[2(n+1)]
+ *          3.每次插入（offer）或删除（poll）操作都会重新维护这个堆，时间复杂度O(logn)
  */
 
 public class Question40 {
