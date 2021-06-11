@@ -102,4 +102,12 @@ public class ArrayUtil {
         return nums;
     }
 
+    /**
+     * 创建符合Question42的数组：[-2, 1, -3, 4, -1, 2, 1, -5, 4]
+     * @return
+     */
+    public static int[] createQuestion42Array() {
+        int[] nums = new int[] {-2, 1, -3, 4, -1, 2, 1, -5, 4};
+        return nums;
+    }
 }
