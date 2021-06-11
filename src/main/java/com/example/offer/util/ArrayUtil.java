@@ -103,11 +103,20 @@ public class ArrayUtil {
     }
 
     /**
-     * 创建符合Question42的数组：[-2, 1, -3, 4, -1, 2, 1, -5, 4]
+     * 1.说明：随机创建一个数组nums
+     * 2.限制：
+     *      1 <= nums.length <= 10^5
+     *      -100 <= nums[i] <= 100
      * @return
      */
     public static int[] createQuestion42Array() {
-        int[] nums = new int[] {-2, 1, -3, 4, -1, 2, 1, -5, 4};
+        Random random = new Random();
+        int arrayLength = random.nextInt(100000) + 1;
+        int[] nums = new int[arrayLength];
+        for (int i = 0; i < arrayLength; i++) {
+            int value = random.nextInt(201) - 100;
+            nums[i] = value;
+        }
         return nums;
     }
 }

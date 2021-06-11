@@ -40,7 +40,7 @@ public class Question42 {
      *          3.假设dp[i]是以nums[i]结尾的子数组中的最大和
      *          4.如何求dp[i]?
      *              1.如果dp[i - 1] <= 0，那么dp[i] = nums[i]
-     *              2.如果dp[i - 1] > o，那么dp[i] = nums[i] + dp[i - 1]
+     *              2.如果dp[i - 1] > 0，那么dp[i] = nums[i] + dp[i - 1]
      *          5.那么我们从dp数组中找出最大的一个数字，这个数字就是目标结果
      *
      * @param nums
@@ -51,16 +51,20 @@ public class Question42 {
             return -1;
         }
 
+        // 创建一个dp数组，长度为nums.length
         int[] dp = new int[nums.length];
+        // 给定dp[0]一个初始值
         dp[0] = nums[0];
         for (int i = 1; i < nums.length; i++) {
+            // 如果dp[i - 1] <= 0，那么dp[i] = nums[i]
             if (dp[i - 1] <= 0) {
                 dp[i] = nums[i];
-            } else {
+            } else { // 如果dp[i - 1] > 0，那么dp[i] = nums[i] + dp[i - 1]
                 dp[i] = nums[i] + dp[i - 1];
             }
         }
 
+        // 从dp数组中找出最大的一个数字，这个数字就是目标结果
         int result = Arrays.stream(dp).max().getAsInt();
         return result;
     }
