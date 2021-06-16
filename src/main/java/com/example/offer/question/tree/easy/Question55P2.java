@@ -1,5 +1,7 @@
 package com.example.offer.question.tree.easy;
 
+import com.example.offer.datastructure.TreeNode;
+
 /**
  * @Description: 剑指 Offer 55 - II. 平衡二叉树
  * @Author: lhb
@@ -20,7 +22,7 @@ public class Question55P2 {
      * @param root
      * @return
      */
-    public static boolean solution1(Question55P1.TreeNode root) {
+    public static boolean solution1(TreeNode root) {
         // 或是根节点为null
         // 或是递归终止的条件
         if (root == null) {

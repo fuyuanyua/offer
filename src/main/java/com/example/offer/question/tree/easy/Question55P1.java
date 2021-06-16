@@ -1,5 +1,6 @@
 package com.example.offer.question.tree.easy;
 
+import com.example.offer.datastructure.TreeNode;
 import lombok.Data;
 import lombok.experimental.Accessors;
 
@@ -23,34 +24,6 @@ import java.util.Queue;
  */
 
 public class Question55P1 {
-
-    /**
-     * 定义一个二叉树节点
-     */
-    @Data
-    @Accessors(chain = true)
-    public static class TreeNode {
-
-        /**
-         * 节点值
-         */
-        private int value;
-
-        /**
-         * 左子树
-         */
-        private TreeNode left;
-
-        /**
-         * 右子树
-         */
-        private TreeNode right;
-
-        public TreeNode(int value) {
-            this.value = value;
-        }
-    }
-
     /**
      * 解法1：
      *      思路：递归
