@@ -20,7 +20,7 @@ import com.example.offer.datastructure.ListNode;
  *                      |
  *          headB：9 -> 8
  *      输出：
- *          3 -> 4 -> 5
+ *          2 -> 3 -> 4 -> 5
  * 4.参考：https://leetcode-cn.com/problems/liang-ge-lian-biao-de-di-yi-ge-gong-gong-jie-dian-lcof/
  * 5.笔记：
  */
