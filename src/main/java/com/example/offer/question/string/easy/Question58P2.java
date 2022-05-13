@@ -8,6 +8,7 @@ public class Question58P2 {
 
     /**
      * 不申请额外空间，只在原字符串上操作
+     *      ps：Java字符串不可变，故在StringBuilder对象上操作
      * @param s
      * @param n
      * @return
