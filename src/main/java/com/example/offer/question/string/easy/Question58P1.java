@@ -24,6 +24,7 @@ public class Question58P1 {
         // 初始都指向字符串尾
         int head = s1.length() - 1;
         int tail = s1.length() - 1;
+        // 用于存放结果
         StringBuilder sb = new StringBuilder();
 
         while (head >= 0) {
