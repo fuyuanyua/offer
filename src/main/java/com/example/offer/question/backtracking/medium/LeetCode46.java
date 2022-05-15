@@ -34,11 +34,11 @@ public class LeetCode46 {
 
         for (int i = 0; i < length; i++) {
             if (!used[i]) {
-                path.push(nums[i]);
+                path.addLast(nums[i]);
                 used[i] = true;
                 dfs(nums, depth + 1, path, used, list);
                 // 回溯
-                path.pop();
+                path.removeLast();
                 used[i] = false;
             }
         }
