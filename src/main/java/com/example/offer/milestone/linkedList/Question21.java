@@ -6,6 +6,9 @@ import com.example.offer.datastructure.ListNode;
  * @Author: lihaibin
  * @Date: 2022/5/16 15:59
  * @Description: 合并两个有序链表：https://leetcode.cn/problems/merge-two-sorted-lists/
+ *
+ * 注意：
+ *      处理链表问题，特别涉及到原链表的改动，创建一个dummy哑节点，往往能避免很多麻烦
  */
 
 public class Question21 {
