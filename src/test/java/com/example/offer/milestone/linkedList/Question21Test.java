@@ -4,8 +4,6 @@ import com.example.offer.datastructure.ListNode;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 /**
  * @Author: lihaibin
  * @Date: 2022/5/16 16:27
@@ -17,14 +15,14 @@ class Question21Test {
 
     @Test
     void mergeTwoLists() {
-        // initialize list1
+        // 初始化list1
         ListNode list1Head = new ListNode(1);
         ListNode list1Node1 = new ListNode(3);
         ListNode list1Node2 = new ListNode(5);
         list1Head.next = list1Node1;
         list1Node1.next = list1Node2;
 
-        // initialize list2
+        // 初始化list2
         ListNode list2Head = new ListNode(2);
         ListNode list2Node1 = new ListNode(4);
         ListNode list2Node2 = new ListNode(6);
