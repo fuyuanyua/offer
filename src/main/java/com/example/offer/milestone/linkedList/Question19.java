@@ -14,7 +14,9 @@ import com.example.offer.datastructure.ListNode;
 public class Question19 {
 
     /**
-     * 删除链表的倒数第 N 个结点，找到倒数第 N + 1 个节点即可，改变这个节点的next指针指向即可
+     * 删除链表的倒数第 N 个结点
+     *      1.首先找到倒数第 N + 1 个节点
+     *      2.然后改变这个节点的next指针指向即可
      * @param head
      * @param n
      * @return
