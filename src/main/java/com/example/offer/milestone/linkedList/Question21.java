@@ -7,6 +7,7 @@ import com.example.offer.datastructure.ListNode;
  * @Date: 2022/5/16 15:59
  * @Description: 合并两个有序链表：https://leetcode.cn/problems/merge-two-sorted-lists/
  */
+
 public class Question21 {
 
     public static ListNode mergeTwoLists(ListNode list1, ListNode list2) {
@@ -34,6 +35,7 @@ public class Question21 {
                 p.next = p1;
                 p1 = p1.next;
             }
+            // 指针不断前进
             p = p.next;
         }
 
