@@ -1,4 +1,4 @@
-package com.example.offer.milestone.linkedList;
+package com.example.offer.milestone.linkedlist;
 
 import com.example.offer.datastructure.ListNode;
 import lombok.extern.slf4j.Slf4j;
