@@ -37,4 +37,29 @@ public class Question26 {
 
         return slow + 1;
     }
+
+    /**
+     * 另一种解法
+     * @param nums
+     * @return
+     */
+    public static int removeDuplicates1(int[] nums) {
+        if (nums == null || nums.length == 0) {
+            return 0;
+        }
+
+        int index = 0;
+        // 这个temp变量的初始值要求一定不能等于nums[0]
+        int temp = Integer.MAX_VALUE;
+
+        for (int i = 0; i < nums.length; i++) {
+            if (temp != nums[i]) {
+                nums[index] = nums[i];
+                temp = nums[index];
+                index++;
+            }
+        }
+
+        return index;
+    }
 }
