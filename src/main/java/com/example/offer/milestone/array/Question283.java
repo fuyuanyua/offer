@@ -6,6 +6,7 @@ package com.example.offer.milestone.array;
  * @Description: 移动零：https://leetcode.cn/problems/move-zeroes/
  *
  * 笔记：
+ *      类型：【双指针-原地修改数组】
  *      此题与Question27：移除元素，采用同样的思想
  *      其实就是先移除数组中所有0，然后再补到数组尾部
  */

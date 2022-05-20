@@ -6,6 +6,7 @@ package com.example.offer.milestone.array;
  * @Description: 删除有序数组中的重复项：https://leetcode.cn/problems/remove-duplicates-from-sorted-array/
  *
  * 笔记：
+ *      类型：【双指针-原地修改数组】
  *      因为是排序数组，那么重复项必定是相邻元素
  *      根据这个特点，设置快慢指针slow和fast
  *      fast先走：

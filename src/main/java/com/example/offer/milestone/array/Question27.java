@@ -6,6 +6,7 @@ package com.example.offer.milestone.array;
  * @Description: 移除元素：https://leetcode.cn/problems/remove-element/
  *
  * 笔记：
+ *      类型：【双指针-原地修改数组】
  *      此题与Question26：删除有序数组中的重复项，采用同样的思想
  */
 
