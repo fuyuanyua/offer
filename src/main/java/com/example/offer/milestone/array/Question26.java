@@ -20,7 +20,7 @@ public class Question26 {
 
     public static int removeDuplicates(int[] nums) {
         if (nums == null || nums.length == 0) {
-            return -1;
+            return 0;
         }
 
         int slow = 0;
