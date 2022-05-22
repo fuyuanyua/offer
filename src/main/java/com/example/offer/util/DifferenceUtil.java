@@ -14,7 +14,8 @@ public class DifferenceUtil {
     private int[] difference;
 
     /**
-     * 根据 nums，构造差分数组 difference
+     * 根据 nums，构造差分数组 difference：
+     *      difference[i] = nums[i] - nums[i - 1]
      * @param nums
      */
     public DifferenceUtil(int[] nums) {
