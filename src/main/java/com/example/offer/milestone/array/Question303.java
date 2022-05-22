@@ -6,7 +6,7 @@ package com.example.offer.milestone.array;
  * @Description: 区域和检索 - 数组不可变：https://leetcode.cn/problems/range-sum-query-immutable/
  *
  * 笔记：
- *      类型【前缀和】
+ *      类型：【前缀和】
  *      这种类型的题目，根据输入数组nums构造前缀和数组sum
  *      即sum[i]保存：nums[0] 到 nums[i] 的所有元素的和
  */
