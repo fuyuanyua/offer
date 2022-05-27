@@ -15,6 +15,14 @@ import java.util.Queue;
 
 public class BfsExample {
 
+    /**
+     * queue api 说明：
+     *      offer、add：都是在队列尾添加元素，当队列满时，调用offer返回false，调用add抛异常
+     *      poll、remove：都是移除队列头元素，当队列是空集合时，调用poll返回false，调用remove抛异常
+     *      peek，element：都是返回队列头元素，当队列是空集合时，调用peek返回null，调用element抛异常
+     * @param root
+     * @return
+     */
     public static List<Integer> levelTraverse(TreeNode root) {
         // 用于保存结果
         List<Integer> result = new ArrayList<>();
