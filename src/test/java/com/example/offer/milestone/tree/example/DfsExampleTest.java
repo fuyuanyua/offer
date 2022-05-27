@@ -1,6 +1,7 @@
-package com.example.offer.milestone.tree;
+package com.example.offer.milestone.tree.example;
 
 import com.example.offer.datastructure.TreeNode;
+import com.example.offer.milestone.tree.example.DfsExample;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 
@@ -8,13 +9,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Slf4j
-class TreeExampleTest {
+class DfsExampleTest {
 
     @Test
     void preorder() {
         List<Integer> result = new ArrayList<>();
         // 12453
-        TreeExample.preorder(buildTree(), result);
+        DfsExample.preorder(buildTree(), result);
         log.info("{}", result);
     }
 
@@ -22,7 +23,7 @@ class TreeExampleTest {
     void inorder() {
         List<Integer> result = new ArrayList<>();
         // 42513
-        TreeExample.inorder(buildTree(), result);
+        DfsExample.inorder(buildTree(), result);
         log.info("{}", result);
     }
 
@@ -30,7 +31,7 @@ class TreeExampleTest {
     void postorder() {
         List<Integer> result = new ArrayList<>();
         // 45231
-        TreeExample.postorder(buildTree(), result);
+        DfsExample.postorder(buildTree(), result);
         log.info("{}", result);
     }
 

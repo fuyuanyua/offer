@@ -1,4 +1,4 @@
-package com.example.offer.milestone.tree;
+package com.example.offer.milestone.tree.example;
 
 import com.example.offer.datastructure.TreeNode;
 
@@ -7,10 +7,10 @@ import java.util.List;
 /**
  * @Author: lihaibin
  * @Date: 2022/5/26 20:33
- * @Description: 树示例：遍历一棵树
+ * @Description: 前序遍历、中序遍历、后序遍历示例（递归实现）
  */
 
-public class TreeExample {
+public class DfsExample {
 
     /**
      * 代码写在不同位置，执行的顺序也不同：
