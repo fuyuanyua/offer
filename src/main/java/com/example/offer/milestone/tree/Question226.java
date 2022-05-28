@@ -25,6 +25,7 @@ public class Question226 {
 
         // 前序位置
         // 交换当前节点的左右子树
+        // ps：这段逻辑放到后序位置，也同样可以实现功能
         TreeNode temp = root.left;
         root.left = root.right;
         root.right = temp;
