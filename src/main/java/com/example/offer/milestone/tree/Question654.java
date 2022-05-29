@@ -8,7 +8,7 @@ import com.example.offer.datastructure.TreeNode;
  * @Description: 最大二叉树：https://leetcode.cn/problems/maximum-binary-tree/
  *
  * 笔记：
- *      分类：【构造二叉树】
+ *      类型：【构造二叉树】
  *      二叉树的构造问题一般都用问题分解的思路：构造一棵树 = 根节点 + 构造左子树 + 构造右子树
  * 注意：
  *      通常是通过【数组】来构造二叉树，每次递归调用方法，并不是新建一个子数组来作为方法参数传入
