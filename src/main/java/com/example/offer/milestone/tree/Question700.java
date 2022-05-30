@@ -15,6 +15,7 @@ import com.example.offer.datastructure.TreeNode;
 public class Question700 {
 
     public static TreeNode searchBST(TreeNode root, int val) {
+        // base case
         if (root == null) {
             return null;
         }
