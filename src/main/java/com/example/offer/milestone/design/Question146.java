@@ -7,6 +7,9 @@ import java.util.Map;
  * @Author: lihaibin
  * @Date: 2022/6/2 19:48
  * @Description: LRU 缓存：https://leetcode.cn/problems/lru-cache/
+ *
+ * 笔记：
+ *      【LRU】：淘汰最久没被使用的数据
  */
 
 public class Question146 {
